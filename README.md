@@ -104,7 +104,7 @@ La Etapa 01, permite la automatización del sistema de riego y monitoreo de hume
 - Resistencia (1 Pza).
 - Protoboard (1 Pza).
 - Cables Jumper Macho - Hembra (5 Pza).
-- Cables Jumper Hembra - Hembra (4 Pza).
+- Cables Jumper Macho - Macho (3 Pza).
 
 ***Equipo de Cómputo***
 
@@ -125,6 +125,10 @@ La Etapa 01, permite la automatización del sistema de riego y monitoreo de hume
 - PubSubClient
 
 # Desarrollo de Proyecto
+
+![https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Circuito.jpg](https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Circuito.jpg)
+
+Circuito.
 
 ![https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Panel%20de%20Control.png](https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Panel%20de%20Control.png)
 
