@@ -4,7 +4,7 @@
 
 ### ***Objetivo General***
 
-Implementar un sistema de riego vertical automático, fácil de instalar y manipular, adaptable a las necesidades del usuario, que reduzca el consumo de agua y pesticidas, para la obtención de productos agrícolas de consumo personal a bajo costo.
+El objetivo de este proyecto es tratar resolver la problemática de desnutrición ya que, de acuerdo con las Naciones Unidas, el objetivo de hambre cero para 2030 está lejos ser alcanzado. También trata de reducir el consumo de agua debido a que la agricultura tradicional consume excesivas cantidades de este recurso. El Banco Mundial menciona que en la agricultura se ocupa el 70% del agua que se extrae en el mundo. Se trata de que este producto y servicio lleguen a ser accesibles a nivel nacional.
 
 ### ***Planteamiento del Problema***
 
