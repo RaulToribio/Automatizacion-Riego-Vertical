@@ -4,19 +4,23 @@
 
 ### ***Objetivo General***
 
-El objetivo de este proyecto es tratar resolver la problemática de desnutrición ya que, de acuerdo con las Naciones Unidas, el objetivo de hambre cero para 2030 está lejos ser alcanzado. También trata de reducir el consumo de agua debido a que la agricultura tradicional consume excesivas cantidades de este recurso. El Banco Mundial menciona que en la agricultura se ocupa el 70% del agua que se extrae en el mundo. Se trata de que este producto y servicio lleguen a ser accesibles a nivel nacional.
+Resolver la problemática de desnutrición ya que, de acuerdo con las Naciones Unidas, el objetivo de hambre cero para 2030 está lejos ser alcanzado. También trata de reducir el consumo de agua debido a que la agricultura tradicional consume excesivas cantidades de este recurso. El Banco Mundial menciona que en la agricultura se ocupa el 70% del agua que se extrae en el mundo. Se trata de que este producto y servicio lleguen a ser accesibles a nivel nacional. 
+
+### ***Objetivos Específicos***
+
+De manera inicial implementaré la solución dentro de mi comunidad.
+
+En una segunda etapa, vincular la solución a diferentes proyectos para llegar a una meta a nivel estatal construyendo pequeñas redes de apoyo para llegar a tener un impacto a nivel nacional.
 
 ### ***Planteamiento del Problema***
 
-El hambre mundial es un problema que afecta a muchos países, haciendo a este uno de los peores problemas en el planeta.
-
-La pobre nutrición causa cerca de la mitad (45 por ciento) de las muertes en los niños menores de 5 años – 3.1 mil niños cada año.
-
-Uno de cuatro niños en el mundo sufren de retraso en el crecimiento. En los países en desarrollo, la proporción puede elevarse a uno de cada tres.
-
-66 millones de niños en edad escolar primaria asisten a clases con hambre en los países en desarrollo, 23 millones solo en África.
-
-[Naciones Unidas - Objetivos de Desarrollo Sostenible (2023)](https://www.notion.so/Automatizaci-n-Riego-Vertical-d0a808cf0c624d5a82edd7ca4016f628)
+- El hambre mundial es un problema que afecta a muchos países, haciendo a este uno de los peores problemas en el planeta.
+- La pobre nutrición causa cerca de la mitad (45 por ciento) de las muertes en los niños menores de 5 años – 3.1 mil niños cada año.
+- Uno de cuatro niños en el mundo sufren de retraso en el crecimiento. En los países en desarrollo, la proporción puede elevarse a uno de cada tres.
+- 66 millones de niños en edad escolar primaria asisten a clases con hambre en los países en desarrollo, 23 millones solo en África.
+    
+    [Naciones Unidas - Objetivos de Desarrollo Sostenible (2023)](https://www.notion.so/Automatizaci-n-Riego-Vertical-d0a808cf0c624d5a82edd7ca4016f628)
+    
 
 ### ***Justificación***
 
@@ -24,44 +28,31 @@ Generalmente, el costo de productos saludables suele ser elevado y un sistema de
 
 ### ***Planteamiento de la Solución***
 
-Sistema de riego vertical automático controlado por sensores.
+Crear un sistema de riego vertical que permita reducir en consumo de agua excesivo actualmente presente en la agricultura tradicional y que permita generar alimentos de primera calidad a un bajo costo.
 
 ### ***Características de la solución***
 
-Permite saber el nivel de agua y nutrientes restantes, energía consumida, temperatura y humedad.
+Huerto vertical con sistema de riego automático de dimensiones de 1.1 m de altura, y un radio de 25 cm con monitoreo en tiempo real de temperatura y humedad a través de NodeRED y Grafana.
 
 ### ***Obstáculos de Solución***
 
-- *Sociales*: Negocios de comida rápida.
+El obstáculo principal es el espacio que se debe destinar al proyecto, que, a pesar de ser pequeño, debe estar en un lugar libre de riesgos para el crecimiento de las lechugas y se debe contar con acceso al servicio de luz, agua e internet.
+
 - *Políticos*: NORMA OFICIAL MEXICANA NOM-065-SSA1-1993 - Especificaciones Sanitarias de los Medios de Cultivo.
 - *Culturales*: Fomento al cuidado y respeto al medio ambiente.
 - *Técnicos*: Fórmula de nutrientes para cada tipo de hortaliza.
 - *Tecnológicos*: Desarrollar un sistema más compacto.
 - *Implementación*: Marketing para dar a conocer el producto, sus ventajas y costo.
 
-### ***Objetivos***
-
-***Generales***
-
-Implementar un sistema de riego vertical automático, fácil de instalar y manipular, adaptable a las necesidades del usuario, que reduzca el consumo de agua y pesticidas, para la obtención de productos agrícolas de consumo personal a bajo costo.
-
-***Particulares***
-
-- Demostrar que se puede acceder a alimentos ricos en nutrientes a costos asequibles.
-- Mostrar que el diseño propuesto permite que se adapte al entorno.
-- Reducir tiempo y gastos en cuidados.
-- Aprovechar de manera eficiente los recursos naturales.
-- Fomentar el cuidado y respeto del medio ambiente.
-
 ### ***Grupo de Enfoque***
 
 ***¿A quién va dirigido?***
 
-A las ciudades, perfecto para personas con espacios reducidos, grupos específicos de población como los niños, niñas, hombres, mujeres en edad reproductiva y adultos mayores.
+El proyecto está dirigido a personas mayores de edad que pueden ser estudiantes, personas asalariadas y no asalariadas.
 
 ***Beneficiarios***
 
-*Directos*: Niños, niñas, hombres, mujeres en edad reproductiva y adultos mayores.
+*Directos*: Todas las personas de la localidad donde el proyecto se implemente debido a que la calidad de nutrición, del aire y desperdicio de agua mejorarían.
 
 *Indirectos*: Ciudades urbanas y medio ambiente.
 
@@ -75,11 +66,11 @@ A las ciudades, perfecto para personas con espacios reducidos, grupos específic
 
 ### ***Alcance del Proyecto***
 
-Producción de hortalizas a base de germinado, debido a la etapa actual del proyecto sólo permite adaptarse a lechugas por el momento.
+Enviar y recibir datos a través del broker Mosquitto en formato JSON interpretado por funciones en NodeRED a una base de datos de MySQL para poder acceder a la información a través de Grafana y visualizar las gráficas generadas en un Dashboard de NodeRED.
 
 ***Características Funcionales***
 
-- Registro de temperatura y humedad con apoyo del sensor de Humedad DHT11.
+- Registro de temperatura y humedad del sensor de Humedad DHT11.
 - Sistema de riego automático.
 
 ***Características No Funcionales***
@@ -105,6 +96,9 @@ La Etapa 01, permite la automatización del sistema de riego y monitoreo de hume
 - Protoboard (1 Pza).
 - Cables Jumper Macho - Hembra (5 Pza).
 - Cables Jumper Macho - Macho (3 Pza).
+- Tubo PVC de 10” (1 Metro).
+- Cople PVC de 10” (1 Pza).
+- Tapa PVC de 10” (1 Pza).
 
 ***Equipo de Cómputo***
 
@@ -129,6 +123,26 @@ La Etapa 01, permite la automatización del sistema de riego y monitoreo de hume
 ![https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Circuito.jpg](https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Circuito.jpg)
 
 Circuito.
+
+***ESP8266 - HW 095***
+
+VIN - 5 V
+
+GND - GND
+
+D1 - IN1
+
+D2 - IN2
+
+D7 - ENA
+
+***ESP8266 - DHT11***
+
+3 V - VIN
+
+GND - GND
+
+D4 - Data
 
 ![https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Panel%20de%20Control.png](https://raw.githubusercontent.com/RaulToribio/Automatizacion-Riego-Vertical/main/Im%C3%A1genes/Panel%20de%20Control.png)
 
@@ -324,7 +338,7 @@ Automatizar el sistema de riego vertical, reducir costos de obtención de hortal
 
 ### ***Población Beneficiada***
 
-Niños, niñas, hombres, mujeres en edad reproductiva y adultos mayores.
+Personas mayores de edad que pueden ser estudiantes, personas asalariadas y no asalariadas.
 
 ### ***Resultados Obtenidos***
 
@@ -334,4 +348,4 @@ Monitoreo de temperatura y humedad actuales con un registro histórico.
 
 ### ***Comentarios Finales***
 
-El sistema de riego vertical automático permite reducir costo de producción y consumo de agua, pesticidas y otros productos que empeoran la calidad del ambiente. Así, permite mejorar la calidad de vida promedio de las personas, reduce las emisiones de dióxido de carbono ya que no hay necesidad de transportar los productos del campo a la ciudad y este compuesto es consumido por las hortalizas, ayuda a regenerar la capa de ozono ya que no se utilizan pesticidas y ayuda al ahorro de agua debido a su bajo consumo.
+El sistema de riego vertical automático permite reducir costo de producción y consumo de agua, pesticidas y otros productos que empeoran la calidad del ambiente. Así, permite mejorar la calidad de vida promedio de las personas, reduce las emisiones de dióxido de carbono ya que no hay necesidad de transportar los productos del campo a la ciudad y este compuesto es consumido por las hortalizas, ayuda a regenerar la capa de ozono ya que no se utilizan pesticidas y ayuda al ahorro de agua debido al bajo consumo de este recurso.
