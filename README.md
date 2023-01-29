@@ -1,5 +1,3 @@
-# Automatización | Riego Vertical
-
 # Introducción
 
 ### ***Objetivo General***
